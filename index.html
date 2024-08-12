@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho if</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<style>/* Reset básico */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Estilo geral do corpo */
+    body {
+        font-family: 'Roboto', sans-serif; /* Fonte moderna e legível */
+        line-height: 1.6;
+        color: #333;
+        background-color: #e0f7fa; /* Cor de fundo suave */
+        padding: 20px;
+    }
+    
+    /* Estilos para cabeçalhos */
+    h1, h2, h3 {
+        color: #004d40; /* Cor verde escuro */
+        font-family: 'Roboto', sans-serif; /* Fonte moderna e legível */
+    }
+    
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+        text-align: center; /* Centraliza o título principal */
+    }
+    
+    h2 {
+        font-size: 2em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        border-bottom: 2px solid #004d40; /* Linha abaixo do título */
+        padding-bottom: 10px; /* Espaço abaixo da linha */
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    /* Estilos para textos e listas */
+    p, ul, ol {
+        margin-bottom: 1em;
+    }
+    
+    ul, ol {
+        padding-left: 20px;
+    }
+    
+    li {
+        margin-bottom: 0.5em;
+    }
+    
+    .texto {
+        color: #00796b; /* Cor verde médio para textos adicionais */
+    }
+    
+    /* Estilo para imagens */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px 0;
+        transition: transform 0.3s ease; /* Transição suave para animação */
+    }
+    
+    img:hover {
+        transform: scale(1.05); /* Aumenta a imagem quando o mouse está sobre ela */
+    }
+    
+    /* Estilos para listas */
+    ul {
+        list-style-type: disc;
+    }
+    
+    ol {
+        list-style-type: decimal;
+    }
+    
+    /* Estilo para as tags de texto */
+    tex, text {
+        font-weight: bold;
+        color: #004d40; /* Cor verde escuro */
+    }
+    
+    /* Estilo para links */
+    a {
+        color: #00796b; /* Cor verde médio */
+        text-decoration: none;
+        transition: color 0.3s ease; /* Transição suave para a cor dos links */
+    }
+    
+    a:hover {
+        text-decoration: underline;
+        color: #004d40; /* Cor verde escuro ao passar o mouse */
+    }
+    
+    /* Estilo para a seção principal */
+    .main-content {
+        background-color: #ffffff; /* Fundo branco para destacar o conteúdo */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px; /* Espaço abaixo da seção principal */
+    }
+    
+    /* Estilo para a lista de informações */
+    .info-list {
+        background-color: #b2dfdb; /* Cor verde claro */
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    
+    /* Estilo para o rodapé */
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #004d40; /* Cor verde escuro para o rodapé */
+    }
+    
+    /* Estilo para a barra de navegação ou links */
+    nav {
+        margin-bottom: 20px;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+    
+    nav ul li a {
+        font-size: 1.1em;
+        color: #00796b; /* Cor verde médio */
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+        color: #004d40; /* Cor verde escuro ao passar o mouse */
+    }
+        </style>
+<body>
+    <h1>
+        <tex> Trabalho-Desastres-Ambientais </tex>
+    </h1>
+    <ul>
+        <li><h3>Nome:Gustavo Jeziorski</h3></li>
+        <li><h3>Prof:Agata</h3></li>
+        <li><h3>Tema:Rompimento da Baragem do Fundão,em Mariana/Mg(2015)</h3></li>
+    </ul>
+    <h1><text>O que é um "desastre ambiental?</text></h1>
+    <h3><text>Desastre ambientais é eventos que acontecem no meio natural e que apresentam consequências negativas para
+            os ecossistemas e para os seres humanos</text></h3>
+    <p>
+    <h2>Diferanças entre desastres ambientais e desastres naturais</h2>
+    </p>
+    <p>
+    <h3>Desastres Naturais:</h3>
+    </p>
+    <h3>Os desastres naturais são eventos produzidos pela natureza sem intervenção humana e que afetam gravemente as
+        pessoas</h3><br>
+    <p>
+    <h3>Desastres Ambientias:</h3>
+    </p>
+    <h3>Os desastres ambientais são causados pela ação humana.</h3><br>
+    <h1><text>Rompimento da Barragem do Fundão,em Mariana</text></h1>
+    <p>
+    <h3>O que foi o "Rompimento da Barragem do Fundão,em Mariana"?</h3>
+    </p>
+    <h3>O Rompimento da Baragem Do fundão, foi a maior tragédia ambienatal da historia do Basil.Deixando 19 mortos.
+    </h3><br>
+    <img src="imagens/antesedepois.png.jpeg" alt="Antes e depois da Barragem"><br>
+    <h2>Onde occoreu?</h2>
+    <p>
+    <h3>Ocorreu na cidade de Mariana, em Minas Gerais,porém a lama chegou em 39 cidades nos estados dew Minas Gerais e
+        Espírito Santo,onde moram cerca de 1,2milhões de habitantes,que infelimente viram suas vidas sendo destrídas...
+    </h3>
+    </p>
+    <img src="imagens/cidades.jpg.jpeg" alt="cidades destruidas">
+    <h3>Quais os elementos contaminantes?
+    </h3>
+    <p>
+    <h3>os principais elementos contaminates que foram liberados foram:</h3>
+    </p>
+    <ul>
+        <li>
+            <h3>Ferro:Principal substância presente nos rejeitos da barragem foi o ferro.O ferro em grande quantidade
+                pode causar impactos na qualidade da água,tornando a água acida e ajudando com a morte de organismos
+                aquáticos.
+            </h3>
+        </li>
+        <li>
+            <h3>Alumínio: O alumínio é um componente comum dos rejeitos de mineração e pode ter efeitos tóxicos em
+                peixes e outros organismos aquáticos quando presente em concentrações elevadas.</h3>
+        </li>
+        <li>
+            <h3>Manganês: Também presente nos rejeitos de minério, o manganês pode afetar negativamente a qualidade da
+                água e a saúde de organismos aquáticos.</h3>
+        </li>
+        <li>
+            <h3>Cobre: O cobre é um elemento potencialmente tóxico que pode ser encontrado em rejeitos minerais e pode
+                prejudicar a saúde dos ecossistemas aquáticos em concentrações elevadas.</h3>
+        </li>
+        <li>
+            <h3>Arsênio: Embora menos comum, o arsênio pode estar presente em alguns tipos de rejeitos de mineração e é
+                altamente tóxico. Ele pode ter efeitos prejudiciais sobre a saúde humana e o meio ambiente.</h3>
+        </li>
+        <li>
+            <h3>Metais Pesados: Além dos elementos mencionados, outros metais pesados, como o chumbo e o cádmio, podem
+                estar
+                presentes em menor quantidade. Esses metais são conhecidos por sua toxicidade e persistência no meio
+                ambiente.</h3>
+        </li>
+        <li>
+            <h3>Sólidos Suspensos: O rompimento da barragem também liberou grandes quantidades de sólidos suspensos, que
+                podem assorear corpos d'água e afetar a qualidade do habitat aquático.
+
+            </h3>
+        </li>
+        <li>
+            <h3>Sedimentos: Os sedimentos liberados contêm uma mistura de minerais e substâncias químicas que podem
+                afetar a qualidade da água e do solo.</h3>
+        </li>
+    </ul>
+    <H3>Qual a extensão do desastre?</H3>
+    <P>
+    <H3>A extensão foi de 600Km, afetando diretamente 41 cidades com água contaminada.</H3>
+    </P><br>
+    <h2>Como afetou as pessoas?
+    </h2>
+    <ol>
+        <li>
+            <h3>Impacto na Saúde
+                Problemas de Saúde: A exposição à água contaminada e aos sedimentos tóxicos causou uma série de
+                problemas de
+                saúde, incluindo doenças de pele, problemas respiratórios e outras condições relacionadas à
+                contaminação.
+
+                Saúde Mental: O trauma e o estresse associados ao desastre tiveram um impacto significativo na saúde
+                mental das
+                vítimas, causando ansiedade, depressão e outros problemas emocionais</h3>
+        </li>
+        <li>
+            <h3>Perda de vidas</h3>
+            <p>
+            <h3>Foram 19 mortes na tragédia</h3>
+            </p>
+            <img src="imagens/vitima.png.jpeg" alt="VITIMA">
+            <h3>Essa foi uma vitimas do desastre</h3>
+        </li>
+        <li>
+            <h3>Deslocamento e Perda de Habitação
+                Deslocamento Forçado: Muitas pessoas foram forçadas a abandonar suas casas devido à inundação e
+                destruição causadas pela lama. Isso resultou no deslocamento temporário ou permanente de comunidades
+                inteiras.
+                Destruição de Propriedades: Casas, empresas e infraestruturas foram destruídas, deixando muitos sem lar
+                e sem meios de subsistência.</h3>
+        </li>
+        <li>
+            <h3> Impactos Econômicos
+                Perda de Renda: A destruição de propriedades e a contaminação de recursos naturais afetaram
+                negativamente a capacidade das pessoas de gerar renda. Muitas pessoas perderam seus empregos ou meios de
+                subsistência, especialmente aqueles que dependiam da agricultura, pesca e turismo.
+
+                Compensações e Recuperação Econômica: A compensação financeira e os esforços de recuperação econômica
+                foram desafiadores e muitas vezes inadequados para cobrir as perdas sofridas.</h3>
+        </li>
+        <li>
+            <h3>Impactos Ambientais e Culturais
+                Destruição de Ecossistemas: A lama tóxica destruiu habitats naturais e causou a morte de animais e
+                plantas, prejudicando o meio ambiente local.
+
+                Perda de Patrimônio Cultural: Algumas áreas afetadas tinham significados culturais e históricos para as
+                comunidades, e a destruição desses locais causou perda de patrimônio cultural e identitário.</h3>
+        </li>
+        <li>
+            <h3>Impactos Ambientais e Culturais
+                Destruição de Ecossistemas: A lama tóxica destruiu habitats naturais e causou a morte de animais e
+                plantas, prejudicando o meio ambiente local.
+
+                Perda de Patrimônio Cultural: Algumas áreas afetadas tinham significados culturais e históricos para as
+                comunidades, e a destruição desses locais causou perda de patrimônio cultural e identitário.</h3>
+        </li>
+
+    </ol>
+    <h3> Como afetou os animais?
+    </h3>
+    <p>
+    <h3>Durante a avalanche de lama, a maioria dos peixes morreram e como resultado 26 espécies desapareceram da área.
+        Enquanto isso, animais terrestres como pequenos mamíferos e anfíbios foram soterrados pela lama. As árvores
+        próximas aos trechos dos rios foram arrancadas pela força da água ou ficaram submersas.</h3>
+    </p>
+    <img src="imagens/ANIMAIS.1.jpeg" alt="" srcset="">
+    <img src="imagens/ANIMAIS2.jpg" alt="">
+    <img src="imagens/ANIMAIS3.jpg" alt="">
+    <h3>Fotos dos animais</h3>
+    <h3>Como afetou o solo?</h3>
+    <p>
+    <h3>O solo foi contaminado pela enxurrada de lama, tornando-se infértil e impedindo o desenvolvimento das espécies
+        vegetais. A composição química do solo foi alterada e não se sabe de que forma e quanto tempo demorará para se
+        restabelecer.</h3>
+
+    </p>
+    <h3>Hoje, como está o local? Pôde ser recuperado? Como?</h3>
+    <p>
+    <h3>Recuperação Ambiental:
+
+        Contaminação e Reabilitação: O Rio Doce e outros corpos d'água foram severamente contaminados pelos rejeitos de
+        mineração. A recuperação inclui ações para limpar e tratar esses corpos d'água, bem como a reabilitação dos
+        ecossistemas adjacentes. Programas de monitoramento contínuo são realizados para avaliar a qualidade da água e a
+        recuperação da fauna e flora.
+        Restauração da Vegetação: Projetos de reflorestamento e recuperação da vegetação nativa foram implementados para
+        ajudar a restaurar a biodiversidade e estabilizar o solo.
+        Recuperação das Comunidades:
+
+        Infraestrutura e Habitação: Muitos residentes perderam suas casas e meios de subsistência. O processo de
+        reconstrução tem sido um desafio, envolvendo a construção de novas moradias, reestruturação de infraestrutura e
+        compensações financeiras. A implementação de programas sociais para apoiar as comunidades afetadas também faz
+        parte dos esforços de recuperação.
+        Compensação e Apoio Psicológico: Há um esforço contínuo para compensar as vítimas e fornecer suporte psicológico
+        e social para ajudar as pessoas a superar o trauma e reconstruir suas vidas.
+        Aspectos Legais e de Segurança:
+
+        Responsabilização e Compensação: A Vale e a BHP Billiton, responsáveis pela barragem, têm enfrentado processos
+        legais e foram obrigadas a pagar indenizações e financiar projetos de recuperação. A aplicação e fiscalização de
+        normas de segurança também foram reforçadas para prevenir futuros desastres.
+        Regulamentações e Normas: Houve uma revisão das regulamentações para barragens e operações de mineração para
+        melhorar a segurança e reduzir o risco de novos acidentes.
+        Em resumo, a recuperação da área afetada pelo rompimento da barragem de Mariana é um processo em andamento e
+        contínuo, com desafios significativos em termos de recuperação ambiental e social. Enquanto alguns progressos
+        foram feitos, a completa recuperação é um objetivo a longo prazo que requer um esforço contínuo e coordenado
+        entre autoridades, empresas e comunidades.</h3>
+    </p>
+    <img src="imagens/cidade nova.jpg" alt="">
+    <img src="imagens/cidadenv.jpg" alt=""> <br>
+    <h3>
+        o que poderia ser feito evitado
+    </h3>
+    <ol>
+        <li><h3>Projetos de Engenharia e Manutenção Adequados:
+
+            Inspeções e Manutenção Rigorosas: Realizar inspeções regulares e rigorosas da estrutura da barragem para
+            identificar e corrigir problemas antes que se tornem críticos.
+            Projetos de Engenharia de Alta Qualidade: Utilizar técnicas de engenharia avançadas e seguir normas de
+            construção rigorosas para garantir a segurança da estrutura da barragem</h3>.</li>
+        <li><h3>Gestão e Monitoramento:
+
+            Monitoramento Contínuo: Implementar sistemas de monitoramento em tempo real para detectar sinais de falhas
+            estruturais, como mudanças na pressão ou deformações.
+            Planos de Contingência: Desenvolver e manter planos de emergência e resposta a desastres bem elaborados, e
+            garantir que todos os funcionários e comunidades locais estejam treinados para responder adequadamente.</h3></li>
+        <li><h3>Regulamentação e Supervisão:
+
+            Cumprimento de Normas: Assegurar que todas as operações de mineração e barragens sigam as regulamentações e
+            normas de segurança estabelecidas.
+            Fiscalização Independente: Promover uma fiscalização independente e rigorosa das práticas de mineração e da
+            segurança das barragens, evitando conflitos de interesse e garantindo a conformidade com as leis.</h3></li>
+    </ol>
+    <h1>REPORTAGEM SOBRE O ACONTECIDO</h1>
+    <iframe src="https://www.youtube.com/embed/Z3sViEptavg" frameborder="0" width="420"  height="320" >
+    </iframe>
+    <h1>REFERÊNCIAS</h1><br>
+    <p><h3>
+        G1<br>
+        TODA MATÉRIA<br>
+        GOOGLE Fotos<br>
+    </h3></p>
+
+</html>
